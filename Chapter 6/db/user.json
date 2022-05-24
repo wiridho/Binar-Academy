@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "nama" : "wiridho",
+        "email": "tambunanwiridho@gmail.com",
+        "password": "1234"
+    },
+    {
+        "id":2,
+        "nama" : "yona",
+        "email": "yohanaseto@gmail.com",
+        "password": "1234"
+    },
+    {
+        "id":3,
+        "nama" : "admin",
+        "email": "admin@gmail.com",
+        "password": "1234"
+    }
+]
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link Fontawesome  -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- Link CSS -->
+	<link rel="stylesheet" href="/styles/dashboard.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Link fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+	<title> Create Form</title>
+
+
+
+</head>
+
+<body>
+
+	<section class="hero-image d-flex align-items-center">
+		<div class="container mt-5">
+			<div class="sidebar">
+				<h3 class="p-3">Admin Dashboard</h3>
+				<a href="/dashboard"><i class="fa fa-home"></i> Home</a>
+				<a href="/dashboard/user"><i class="fa fa-user"></i> User</a>
+				<a class="active" href="/dashboard/create"><i class="fa fa-plus"></i> Create User</a>
+			</div>
+
+			<div class="content">
+				<h3><i class="fa-solid fa-marker"></i>Form Create User</h3>
+				<form action="/dashboard/create" method="post">
+					<!-- Email -->
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" name="email" class="form-control" id="exampleInputEmail1"
+							aria-describedby="emailHelp" placeholder="yourname@gmail.com">
+					</div>
+					<!-- Fullname -->
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Fullname</label>
+						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+							placeholder="Fullname...">
+					</div>
+					<!-- Username -->
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Username</label>
+						<input type="text" class="form-control" name="username" id="exampleInputEmail1"
+							aria-describedby="emailHelp" placeholder="Username ...">
+					</div>
+					<!-- Passowrd -->
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" name="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<!-- Button -->
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

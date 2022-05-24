@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link Fontawesome  -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- Link CSS -->
+	<link rel="stylesheet" href="/styles/dashboard.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Link fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+	<title> Dashboard </title>
+
+
+
+</head>
+
+<body>
+
+	<section class="hero-image d-flex align-items-center">
+		<div class="container mt-5">
+			<div class="sidebar">
+				<h3 class="p-3">Admin Dashboard</h3>
+				<a href="/dashboard"><i class="fa fa-home"></i> Home</a>
+				<a class="active" href="/dashboard/user"><i class="fa fa-user"></i> User</a>
+				<a href="/dashboard/create"><i class="fa fa-plus"></i> Create User</a>
+			</div>
+
+			<div class="content">
+				<h3>List Data User</h3>
+
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">Id</th>
+							<th scope="col">Username</th>
+							<th scope="col">Password</th>
+							<th scope="col">Edit</th>
+							<th scope="col">Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% let i =1 %>
+						<% user_game.forEach(user => { %>
+						<tr>
+							<td><%= i %></td>
+							<td><%= user.id%></td>
+							<td><%= user.username%></td>
+							<td><%= user.password%></td>
+							<td>
+								<div class="button-edit">
+									<a class="btn btn-success" href="/dashboard/users/update/<%= user.id %>"
+										role="button">Edit</a>
+								</div>
+							</td>
+							<td>
+								<div class="button-delete">
+									<!-- <a class="btn btn-danger" href="/dashboard/users/delete/<%= user.id %>"
+										role="button">Delete</a> -->
+								</div>
+							</td>
+							<td>
+								<div class="button-show">
+									<a href="/dashboard/users/<%= user.id %>">Show All Data</a>
+								</div>
+							</td>
+						</tr>
+						<% i++ %>
+						<% }) %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
