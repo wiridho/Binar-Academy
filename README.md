@@ -1,2 +1,2 @@
 # Binar-Academy
-Challenge
+Bootcamp Full-Stack Development Challenge
