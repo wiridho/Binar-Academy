@@ -144,7 +144,8 @@ const create_user = (req, res) => {
 //Update
 
 // Mendapatkan isi form user dari id
-let update_form = (req, res) => {
+
+const update_form = (req, res) => {
     user_game.findOne({
             where: {
                 id: req.params.id

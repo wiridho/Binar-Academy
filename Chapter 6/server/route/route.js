@@ -34,8 +34,8 @@ router.post('/dashboard/create', constControllers.create_user);
 
 
 // Update 
-router.get('/dashboard/users/update/:id', dashboardController.update_form);
-router.post('/dashboard/users/update/:id', dashboardController.update_user);
+router.get('/dashboard/users/update/:id', constControllers.update_form);
+router.post('/dashboard/users/update/:id', constControllers.update_user);
 
 
 
